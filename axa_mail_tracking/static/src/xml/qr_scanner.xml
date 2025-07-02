@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="axa_mail_tracking.QRScanner" owl="1">
+        <div class="qr-scanner-container">
+            <h3 t-esc="props.title"/>
+
+            <div t-if="state.error" class="alert alert-danger">
+                <t t-esc="state.error"/>
+            </div>
+
+            <div t-if="state.isScanning" class="camera-preview">
+                <video t-ref="videoRef" autoplay="true" playsinline="true"/>
+            </div>
+
+            <div class="button-group">
+                <button t-if="!state.isScanning"
+                        t-on-click="startScanner"
+                        class="btn btn-primary">
+                    <i class="fa fa-camera"/> Démarrer Scan
+                </button>
+
+                <button t-if="state.isScanning"
+                        t-on-click="stopScanner"
+                        class="btn btn-danger">
+                    <i class="fa fa-stop"/> Arrêter
+                </button>
+            </div>
+        </div>
+    </t>
+</templates>
