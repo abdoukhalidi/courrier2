@@ -1,7 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_axa_mail_tracking_manager,axa.mail.tracking manager,model_axa_mail_tracking,group_axa_mail_manager,1,1,1,1
-access_axa_dispatch_history_manager,axa.dispatch.history manager,model_axa_dispatch_history,group_axa_mail_manager,1,1,1,1
-access_axa_mail_tracking_coursier,axa.mail.tracking coursier,model_axa_mail_tracking,group_axa_coursier,1,1,1,0
-access_axa_dispatch_history_coursier,axa.dispatch.history coursier,model_axa_dispatch_history,group_axa_coursier,1,1,1,0
-access_axa_mail_tracking_destinataire,axa.mail.tracking destinataire,model_axa_mail_tracking,group_axa_destinataire,1,0,0,0
-access_axa_dispatch_history_destinataire,axa.dispatch.history destinataire,model_axa_dispatch_history,group_axa_destinataire,1,0,0,0
